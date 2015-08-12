@@ -1,0 +1,15 @@
+{
+  "name": "wakatoday",
+  "version": "0.1.0",
+  "description": "Get a promise get of your time spent coding today",
+  "repository": "git@github.com:DKunin/wakatoday.git",
+  "main": "index.js",
+  "scripts": {},
+  "author": "dkunin",
+  "license": "ISC",
+  "dependencies": {
+    "pretty-ms": "^2.0.0",
+    "ramda": "^0.17.1",
+    "superagent": "^1.3.0"
+  }
+}
