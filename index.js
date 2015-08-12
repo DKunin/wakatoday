@@ -18,7 +18,6 @@ var summDuration = function(item, itemb){
 var getFullDuration = R.compose(prettyMs, R.multiply(1000), R.reduce(summDuration, {total_seconds:0}), R.pluck('grand_total'),R.prop('data'));
 
 function getHours(apiKey){
-  console.log(apiKey);
   return new Promise(function(resolve,reject){
     request
       .get('https://wakatime.com/api/v1/summary/daily')
