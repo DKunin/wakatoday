@@ -15,7 +15,7 @@
   
     var getWakaTime = require('wakatoday');
 
-    getTime('<YOUR_API_KEY>'').then(console.log).catch(console.log); //6h 10m 12s
+    getTime('<YOUR_API_KEY>').then(console.log).catch(console.log); //6h 10m 12s
 
 ```
 
