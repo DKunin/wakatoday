@@ -20,7 +20,7 @@ var getFullDuration = R.compose(prettyMs, R.multiply(1000), R.reduce(summDuratio
 function getHours(apiKey){
   return new Promise(function(resolve,reject){
     request
-      .get('https://wakatime.com/api/v1/summary/daily')
+      .get('https://wakatime.com/api/v1/users/current/summaries')
       .query({start:today, end: today, api_key: apiKey})
       .end(function (error, body) {
         if(error) {
